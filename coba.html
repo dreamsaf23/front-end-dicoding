@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FLEXBOX</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      .container {
+        display: flex;
+        width: 800px;
+        height: 250px;
+        background-color: salmon;
+        border: 2px solid black;
+        padding: 20px;
+        border-radius: 10px;
+        margin: 0 auto;
+      }
+      .box {
+        flex-grow: 1;
+        background-color: turquoise;
+        margin: 5px;
+        border: 1px solid black;
+        border-radius: 10px;
+      }
+
+      .container-1 {
+        display: flex;
+        width: 800px;
+        height: 250px;
+        background-color: turquoise;
+        border: 1px solid black;
+        padding: 20px;
+        margin: 50px auto;
+        border-radius: 10px;
+        flex-direction: column;
+      }
+
+      .box-1 {
+        background-color: gold;
+        border: 1px solid black;
+        margin: 5px;
+        border-radius: 10px;
+      }
+
+      .first {
+        flex-grow: 1;
+      }
+
+      .second {
+        flex-grow: 2;
+      }
+
+      .thrid {
+        flex-grow: 3;
+      }
+
+      .flex-column {
+        display: flex;
+        flex-direction: column;
+        width: 800px;
+        height: 300px;
+        padding: 20px;
+        margin: 50px auto;
+        border: 2px solid black;
+        border-radius: 10px;
+        background-color: cadetblue;
+      }
+
+      .flex-row {
+        display: flex;
+        flex-direction: row;
+        flex-grow: 1;
+        padding: 20px;
+        margin: 5px;
+        background-color: coral;
+        border: 2px solid black;
+        border-radius: 10px;
+      }
+
+      .box2 {
+        flex-grow: 1;
+        margin: 5px;
+        border: 2px solid black;
+        border-radius: 10px;
+        background-color: cornflowerblue;
+      }
+
+      .container2 {
+        width: 800px;
+        display: flex;
+        flex-direction: column;
+        border: 2px solid black;
+        margin: 50px auto;
+      }
+
+      .flex-column1 {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .flex-row1 {
+        display: flex;
+        flex-direction: row;
+        flex-grow: 1;
+      }
+
+      .box3 {
+        flex-grow: 1;
+        background-color: cornflowerblue;
+        border: 2px solid black;
+        padding: 40px;
+        text-align: center;
+        color: white;
+        font-size: 1.5em;
+      }
+
+      .double {
+        flex-grow: 2;
+      }
+
+      .container3 {
+        width: 800px;
+        border: 2px solid black;
+        margin: auto;
+      }
+
+      .box4 {
+        flex-basis: 25%;
+        background-color: aquamarine;
+        border: 2px solid black;
+        padding: 40px;
+        text-align: center;
+        color: black;
+        font-size: 1.5em;
+      }
+
+      .extra {
+        flex-basis: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+    </div>
+
+    <div class="container-1">
+      <div class="box-1 first"></div>
+      <div class="box-1 second"></div>
+      <div class="box-1 thrid"></div>
+    </div>
+
+    <div class="flex-column">
+      <div class="flex-row">
+        <div class="box2"></div>
+        <div class="box2"></div>
+        <div class="box2"></div>
+      </div>
+
+      <div class="flex-row">
+        <div class="box2"></div>
+        <div class="box2"></div>
+        <div class="box2"></div>
+      </div>
+    </div>
+
+    <div class="container2">
+      <div class="flex-column1">
+        <div class="flex-row1">
+          <div class="box3">1</div>
+          <div class="box3">2</div>
+          <div class="box3">3</div>
+          <div class="box3">4</div>
+        </div>
+
+        <div class="flex-row1">
+          <div class="box3">5</div>
+          <div class="box3">6</div>
+          <div class="box3 double">7</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Flex-basis Start -->
+
+    <div class="container3">
+      <div class="flex-column1">
+        <div class="flex-row1">
+          <div class="box4">1</div>
+          <div class="box4">2</div>
+          <div class="box4">3</div>
+          <div class="box4">4</div>
+        </div>
+
+        <div class="flex-row1">
+          <div class="box4">5</div>
+          <div class="box4">6</div>
+          <div class="box4 extra">7</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Flex-basis End -->
+  </body>
+</html>
